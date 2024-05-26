@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { ChakraProvider, Grid, GridItem } from '@chakra-ui/react';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider>
+      <Grid
+        templateColumns="repeat(7, 1fr)"
+        h="100vh"
+        gap={5}
+      >
+        <GridItem className="navbar" colSpan={1} bg='white'>
+          
+        </GridItem>
+        <GridItem className="content" colSpan={6} bg='grey'>
+          
+        </GridItem>
+      </Grid>
+
+    </ChakraProvider>
   );
 }
 
