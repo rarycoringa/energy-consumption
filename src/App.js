@@ -1,4 +1,7 @@
 import { ChakraProvider, Grid, GridItem } from '@chakra-ui/react';
+import { Header } from './components/Header';
+import { Buttons } from './components/Button';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -9,7 +12,9 @@ function App() {
         gap={5}
       >
         <GridItem className="navbar" colSpan={1} bg='white'>
-          
+          <Header />
+          <Buttons />
+          <Footer />
         </GridItem>
         <GridItem className="content" colSpan={6} bg='grey'>
           
