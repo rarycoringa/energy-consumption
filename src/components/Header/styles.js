@@ -13,6 +13,4 @@ export const Container = styled.header`
   gap: 15px;
   margin-bottom: 80px;
   padding-top: 20px;
-
-  /* background-color: red; */
 `;
