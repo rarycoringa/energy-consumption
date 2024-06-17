@@ -12,4 +12,6 @@ export const Container = styled.footer`
   line-height: 24px;
 
   gap: 8px;
+
+  color: #FFFFFF;
 `;

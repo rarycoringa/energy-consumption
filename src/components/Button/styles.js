@@ -7,6 +7,9 @@ export const Container = styled.div`
   flex-direction: column;
 
   gap: 10px;
+  margin-top: -65px;
 
-  margin-bottom: 200px;
+  > button:hover {
+    background-color: gray;
+  }
 `;

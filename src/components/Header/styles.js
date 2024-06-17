@@ -11,6 +11,9 @@ export const Container = styled.header`
   align-items: center;
 
   gap: 15px;
-  margin-bottom: 80px;
   padding-top: 20px;
+
+  > p {
+    color: #FFFFFF;
+  }
 `;
