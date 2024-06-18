@@ -2,6 +2,7 @@ import { ChakraProvider, Grid, GridItem } from '@chakra-ui/react';
 import { Header } from './components/Header';
 import { Buttons } from './components/Button';
 import { Footer } from './components/Footer';
+import { ModalRegistration } from './components/ModalRegistration';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         w="100%"
         h="100vh"
         gap={5}
+        bg='#1C1B1E'
       >
         <GridItem className="navbar" 
         w="108%" 
@@ -25,9 +27,11 @@ function App() {
           <Buttons />
           <Footer />
         </GridItem>
-        <GridItem className="content" w="100%" colSpan={6} bg='#1C1B1E'>
-          
+        
+        <GridItem colSpan={2} colStart={6} colEnd={7}>
+          <ModalRegistration />
         </GridItem>
+
       </Grid>
 
     </ChakraProvider>
