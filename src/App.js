@@ -15,7 +15,7 @@ function App() {
         <GridItem className="navbar" 
         w="108%" 
         colSpan={1} 
-        bg='#101011' 
+        backgroundColor='#101011' 
         display="flex" 
         alignItems="center" 
         justifyContent="space-between" 
