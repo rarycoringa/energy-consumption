@@ -3,7 +3,6 @@ import { Card, CardBody, CardFooter, CardHeader, Flex, Stack, StackDivider, Stat
 export function MonthlySummaryCard (
     { summaryType, currentMonthValue, previousMonthValue, percentageValue, percentageType}
 ) {
-    // const percentageValue = () =>
 
     return (
         <Card alignItems="center" gap={2} paddingY={2} paddingX={4}>

@@ -32,8 +32,8 @@ export function AppliancesDashboard () {
             >
                 <MonthlySummaryCard 
                     summaryType="Consumption"
-                    currentMonthValue="89 kWh"
-                    previousMonthValue="93 kWh"
+                    currentMonthValue="89 kW"
+                    previousMonthValue="93 kW"
                     percentageValue={3}
                     percentageType="increase"
                 />
