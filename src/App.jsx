@@ -1,5 +1,6 @@
 import { ChakraProvider, Grid, GridItem } from '@chakra-ui/react';
 import { Navbar } from './navbar/Navbar'
+import { AppliancesDashboard } from './dashboard/AppliancesDashboard';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           className="content"
           colSpan={6}
           >
+            <AppliancesDashboard />
         </GridItem>
 
       </Grid>
