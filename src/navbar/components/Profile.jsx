@@ -8,7 +8,7 @@ export function Profile () {
             gap={1}
             padding={5}
         >
-            <Avatar />
+            <Avatar size="lg" />
 
             <Text fontSize="xl" as="b">James Smith</Text>
         </Flex>

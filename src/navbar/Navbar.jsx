@@ -4,7 +4,7 @@ import { Profile } from "./components/Profile";
 import { Menu } from "./components/Menu";
 import { Footer } from "./components/Footer";
 
-export function Navbar() {
+export function Navbar () {
     return (
         <Flex
             flexDirection="column"

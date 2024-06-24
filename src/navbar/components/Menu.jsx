@@ -10,6 +10,7 @@ export function Menu () {
             <Button variant="ghost" justifyContent="flex-start">
                 Appliance Consumption
             </Button>
+            
             <Button variant="ghost" justifyContent="flex-start" isDisabled={true}>
                 Weekly Consumption
             </Button>
