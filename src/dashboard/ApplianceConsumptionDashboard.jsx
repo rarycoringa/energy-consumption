@@ -1,17 +1,18 @@
 import { Grid, GridItem } from "@chakra-ui/react";
 import { MonthlySummaryCard } from "./components/MonthlySummaryCard";
+import { ApplianceList } from "./components/ApplianceList"
 
-export function AppliancesDashboard () {
+export function ApplianceConsumptionDashboard () {
     return (
         <Grid
-            templateRows="repeat(3, 1fr)"
+            templateRows="repeat(4, 1fr)"
             templateColumns="repeat(2, 1fr)"
-            height="100%"
+            height="100vh"
             width="100%"
             gap={5}
             paddingX="8em"
             paddingY="3em"
-            bgColor="lightgrey"
+
         >
             <GridItem
                 rowSpan={1}
@@ -21,8 +22,6 @@ export function AppliancesDashboard () {
                     summaryType="Cost"
                     currentMonthValue="$ 29.30"
                     previousMonthValue="$ 31.85"
-                    percentageValue={2}
-                    percentageType="increase"
                 />
             </GridItem>
 
@@ -34,16 +33,14 @@ export function AppliancesDashboard () {
                     summaryType="Consumption"
                     currentMonthValue="89 kW"
                     previousMonthValue="93 kW"
-                    percentageValue={3}
-                    percentageType="increase"
                 />
             </GridItem>
 
             <GridItem
-                rowSpan={2}
+                rowSpan={3}
                 colSpan={2}
-                bgColor="darkgray"
             >
+                <ApplianceList />
             </GridItem>
 
         </Grid>

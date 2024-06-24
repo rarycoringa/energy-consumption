@@ -1,4 +1,4 @@
-import { Button, Flex } from "@chakra-ui/react";
+import { Button, Flex, LinkBox } from "@chakra-ui/react";
 
 export function Menu () {
     return (
@@ -7,7 +7,7 @@ export function Menu () {
             alignItems="stretch"
             gap={1}
         >
-            <Button variant="ghost" justifyContent="flex-start">
+            <Button as="a" href="#" variant="ghost" justifyContent="flex-start">
                 Appliance Consumption
             </Button>
             

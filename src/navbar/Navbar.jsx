@@ -10,7 +10,7 @@ export function Navbar () {
             flexDirection="column"
             justifyContent="space-between"
             alignItems="center"
-            height="100%"
+            height="100vh"
             padding={5}
         >
             <Profile />
