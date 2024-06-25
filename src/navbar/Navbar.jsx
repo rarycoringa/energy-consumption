@@ -1,21 +1,22 @@
 import { Flex } from "@chakra-ui/react";
 
 import { Profile } from "./components/Profile";
-import { Menu } from "./components/Menu";
 import { Footer } from "./components/Footer";
+import { ProfileList } from "./components/ProfileList";
 
-export function Navbar () {
+export function Navbar ( { sensor, sensorsList, changeSensor } ) {
     return (
         <Flex
             flexDirection="column"
             justifyContent="space-between"
-            alignItems="center"
+            alignItems="stretch"
             height="100vh"
-            padding={5}
+            width="100%"
+            padding={3}
         >
-            <Profile />
+            <Profile sensor={sensor} />
 
-            <Menu />
+            <ProfileList sensorsList={sensorsList} changeSensor={changeSensor}/>
 
             <Footer />
         </Flex>
